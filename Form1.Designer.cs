@@ -28,38 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            redButton = new Button();
-            whiteButton = new Button();
-            blueButton = new Button();
+            RedButton = new Button();
+            WhiteButton = new Button();
+            BlueButton = new Button();
             favoriteButton = new Button();
             SuspendLayout();
             // 
-            // redButton
+            // RedButton
             // 
-            redButton.Location = new Point(32, 65);
-            redButton.Name = "redButton";
-            redButton.Size = new Size(112, 34);
-            redButton.TabIndex = 0;
-            redButton.Text = "Red";
-            redButton.UseVisualStyleBackColor = true;
+            RedButton.Location = new Point(32, 65);
+            RedButton.Name = "RedButton";
+            RedButton.Size = new Size(112, 34);
+            RedButton.TabIndex = 0;
+            RedButton.Text = "Red";
+            RedButton.UseVisualStyleBackColor = true;
+            RedButton.Click += RedButton_Click;
             // 
-            // whiteButton
+            // WhiteButton
             // 
-            whiteButton.Location = new Point(195, 65);
-            whiteButton.Name = "whiteButton";
-            whiteButton.Size = new Size(112, 34);
-            whiteButton.TabIndex = 1;
-            whiteButton.Text = "White";
-            whiteButton.UseVisualStyleBackColor = true;
+            WhiteButton.Location = new Point(195, 65);
+            WhiteButton.Name = "WhiteButton";
+            WhiteButton.Size = new Size(112, 34);
+            WhiteButton.TabIndex = 1;
+            WhiteButton.Text = "White";
+            WhiteButton.UseVisualStyleBackColor = true;
+            WhiteButton.Click += WhiteButton_Click;
             // 
-            // blueButton
+            // BlueButton
             // 
-            blueButton.Location = new Point(378, 65);
-            blueButton.Name = "blueButton";
-            blueButton.Size = new Size(112, 34);
-            blueButton.TabIndex = 2;
-            blueButton.Text = "Blue";
-            blueButton.UseVisualStyleBackColor = true;
+            BlueButton.Location = new Point(378, 65);
+            BlueButton.Name = "BlueButton";
+            BlueButton.Size = new Size(112, 34);
+            BlueButton.TabIndex = 2;
+            BlueButton.Text = "Blue";
+            BlueButton.UseVisualStyleBackColor = true;
+            BlueButton.Click += BlueButton_Click;
             // 
             // favoriteButton
             // 
@@ -76,9 +79,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1021, 265);
             Controls.Add(favoriteButton);
-            Controls.Add(blueButton);
-            Controls.Add(whiteButton);
-            Controls.Add(redButton);
+            Controls.Add(BlueButton);
+            Controls.Add(WhiteButton);
+            Controls.Add(RedButton);
             Name = "Form1";
             Text = "Many Buttons";
             ResumeLayout(false);
@@ -86,9 +89,9 @@
 
         #endregion
 
-        private Button redButton;
-        private Button whiteButton;
-        private Button blueButton;
+        private Button RedButton;
+        private Button WhiteButton;
+        private Button BlueButton;
         private Button favoriteButton;
     }
 }
